@@ -19,6 +19,5 @@ export class HomePage {
       keywords: 'لگو، اسباب‌بازی لگویی، خرید لگو، هدیه لگویی، لگو کودکان، لگو بزرگسالان',
       canonical: 'https://legatoys.ir/',
     });
-    console.log('sgnl');
   }
 }

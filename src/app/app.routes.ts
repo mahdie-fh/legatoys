@@ -1,10 +1,14 @@
 import { Routes } from '@angular/router';
+import { Layout } from './core/layout/layout/layout';
+import { HomePage } from './features/home/home-page/home-page';
 
 export const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./features/home/home.routes.js').then((m) => m.HOME_ROUTES),
+    component: Layout,
+    children: [{ path: '', component: HomePage }],
   },
+
   // {
   //   path: 'products',
   //   loadChildren: () =>
